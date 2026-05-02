@@ -4,32 +4,38 @@ Update this file whenever the current phase, active feature, or implementation s
 
 ## Current Phase
 
-- Not started
+- Foundation: Design System & UI Primitives
 
 ## Current Goal
 
-- Define the immediate implementation goal here.
+- Install and configure shadcn/ui with dark theme tokens
+- Add Button, Card, Dialog, Input, Tabs, Textarea, ScrollArea components
+- Create lib/utils.ts with cn() helper
+- Ensure all components match the dark theme in globals.css
 
 ## Completed
 
-- None yet.
+- 01-design-system.md: Installed shadcn/ui, added all UI primitive components (Button, Card, Dialog, Input, Tabs, Textarea, ScrollArea), created lib/utils.ts with cn() helper, configured dark theme in globals.css, installed lucide-react. Build passes cleanly with no errors and no light styling.
 
 ## In Progress
 
-- None yet.
+- None
 
 ## Next Up
 
-- Add the next planned feature unit here.
+- Authentication setup (Clerk)
 
 ## Open Questions
 
-- Add unresolved product or implementation questions here.
+- None yet.
 
 ## Architecture Decisions
 
-- Add decisions that affect the system design or data model.
+- Using Tailwind v4 with `@theme inline` for CSS custom property token mapping
+- shadcn/ui as the component foundation — no modifications to generated components
 
 ## Session Notes
 
-- Add context needed to resume work in the next session.
+- Project is a fresh Next.js 16 + Tailwind v4 install
+- globals.css currently only has `@import "tailwindcss"` — needs theme configuration
+- tsconfig.json has `@/*` path alias configured

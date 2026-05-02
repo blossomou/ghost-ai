@@ -1,8 +1,8 @@
 Read `AGENTS.md` before starting.
 
-We're adding the dseign system and UI primitive components.
+We're adding the design system and UI primitive components.
 
-Install and configure `shadcn/ui`
+Install and configure `shadcn/ui`.
 
 Add these shadcn components:
 -Button
@@ -19,7 +19,7 @@ Also Install `lucide-react`.
 
 Create `lib/utils.ts` with a reusable `cn()` helper for merging Tailwind classes.
 
-Ensure all components match the existing dadrk theme in `global.css`.
+Ensure all components match the existing dark theme in `global.css`.
 
 ### Check when done
 
