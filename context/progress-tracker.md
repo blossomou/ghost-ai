@@ -4,18 +4,18 @@ Update this file whenever the current phase, active feature, or implementation s
 
 ## Current Phase
 
-- Foundation: Design System & UI Primitives
+- Editor Chrome & Sidebar Shell
 
 ## Current Goal
 
-- Install and configure shadcn/ui with dark theme tokens
-- Add Button, Card, Dialog, Input, Tabs, Textarea, ScrollArea components
-- Create lib/utils.ts with cn() helper
-- Ensure all components match the dark theme in globals.css
+- Create editor navbar with sidebar toggle
+- Create project sidebar as floating overlay with tabs and empty states
+- Create reusable dialog pattern component
 
 ## Completed
 
 - 01-design-system.md: Installed shadcn/ui, added all UI primitive components (Button, Card, Dialog, Input, Tabs, Textarea, ScrollArea), created lib/utils.ts with cn() helper, configured dark theme in globals.css, installed lucide-react. Build passes cleanly with no errors and no light styling.
+- 02-editor.md: Created `components/editor/editor-navbar.tsx` (fixed-height navbar with sidebar toggle using PanelLeftOpen/PanelLeftClose icons), `components/editor/project-sidebar.tsx` (floating overlay sidebar with Projects header, close button, shadcn Tabs for My Projects / Shared, empty placeholder states, and New Project button), and `components/editor/dialog-pattern.tsx` (reusable dialog wrapper with title, description, footer actions). TypeScript compiles cleanly, production build passes.
 
 ## In Progress
 
